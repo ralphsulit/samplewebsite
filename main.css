@@ -1,0 +1,714 @@
+* { 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 14px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(218, 28%, 13%);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+/* *******************
+General
+******************* */
+.container {
+  width: 100%;
+  margin: 50px 0;
+}
+
+li {
+  list-style-type: none;
+  display: inline-block;
+}
+
+ul li a {
+  text-decoration: none;
+  color:hsl(0, 0%, 100%); 
+  padding: 0 20px;
+}
+
+button {
+  border: none;
+  border-radius: 50px;
+  padding: 15px 80px;
+  margin-top: 30px;
+  font-weight: 700;
+  color:hsl(0, 0%, 100%);
+  background: linear-gradient(to right,rgba(4, 238, 255, 0.945), rgba(14, 217, 231, 0.767));  
+  cursor: pointer;
+}
+
+
+h5 {
+  font-weight: 200;
+  line-height: 20px;
+}
+
+
+/* *******************
+Colors
+******************* */
+.cyan {
+  color: hsl(176, 68%, 64%);
+}
+
+.blue {
+  color: hsl(198 60%, 50%);
+}
+
+.red {
+  color: hsl(0, 100%, 63%);
+}
+
+/* *******************
+Header: 
+Navigation
+******************* */
+#header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 1300px;
+}
+
+.logo {
+  width: 130px;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+
+/* *******************
+Main:
+Banner
+******************* */
+.upper-banner {
+  text-align: center;
+  margin: 60px 0;
+
+}
+
+.upper-banner-text h1 {
+  font-size: 2em;  
+  width: 600px;
+  margin: 40px auto;
+}
+
+.upper-banner-text p {
+  font-size: 1em;
+  font-weight: 200;
+  width: 438px;
+  margin: 0 auto;
+  line-height: 25px;
+}
+
+/* *******************
+Main:
+Cards after banner
+******************* */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-rows: 1fr;
+  margin: 200px auto;
+  width: 900px;
+  gap: 100px;
+  text-align: center;
+}
+
+.cards img {
+  width: 63px;
+  height: 58px;
+}
+
+.cards h5 {
+  width: 290px;
+  margin: 0 auto;
+}
+
+.card-2 h5,
+.card-3 h5 {
+  width: 312px;
+}
+
+.card-2 img {
+  width: 50px;
+  height: 60px;
+}
+
+.card-3 img{
+  width: 68px;
+  height: 53px;
+}
+
+.card-4 img {
+  width: 70px;
+  height: 50px;
+}
+
+.cards h3 {
+  margin: 15px 0;
+}
+
+/* *******************
+Main:
+Lower Banner
+******************* */
+.lower-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+  text-align: left;
+  margin: 100px auto;
+}
+
+.lower-banner-text {
+  width: 500px;
+}
+
+.lower-banner h1 {
+  font-size: 2em;
+  line-height: 40px;
+  width: 300px;
+}
+
+.lower-banner p {
+  margin: 20px 0;
+}
+
+.lower-banner a {
+  display: flex;
+  text-decoration: none;
+  color:hsl(0, 0%, 100%);
+  width: 150px;
+}
+
+.lower-banner a:hover {
+  border-bottom: 1px solid #fff;
+  padding-bottom: 5px;
+  color:hsl(176, 68%, 64%);
+}
+
+
+/* *******************
+Main:
+Testimonials
+******************* */
+.testi {
+  display: flex;  
+  justify-content: center;  
+  background: url(images/bg-quotes.png);
+  background-size: 60px;
+  background-repeat: no-repeat;
+  background-position: left 125px top 60px;
+  width: 1440px;
+  margin: 0 auto;
+}
+
+.testi-card {
+  border: none;
+  background: hsl(219, 30%, 18%);
+  margin: 100px 30px;
+  padding: 40px 30px 30px 30px;
+  border-radius: 5px;
+  width: 350px;
+}
+
+.testi-card-profile {
+  display: flex;
+  margin-top: 30px;
+  align-items: center;
+}
+
+.testi-card h5 {
+  width: 280px;
+}
+
+.testi img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.profile-name {
+  font-size: 0.8em;
+  font-weight: 800;
+  line-height: 15px;
+}
+
+.profile-name h6 {
+  font-weight: 200;
+}
+
+/* *******************
+Form Before Footer
+******************* */
+.form {
+  background: hsl(217, 28%, 15%);
+  padding: 40px 150px;
+  border: none;
+  border-radius: 8px;
+  text-align: center;
+  width: 1020px;
+  margin: 150px auto;
+  position: relative;
+  margin-bottom: -80px;
+}
+
+.form p {
+  margin: 30px 0;
+  width: 650px;
+  line-height: 25px;
+}
+
+input {
+  text-align: left;
+}
+
+input[type=email] {
+  margin-right: 30px;
+  padding: 15px 150px;
+  border: none;
+  border-radius: 20px;
+  color:hsla(216, 53%, 9%, 20%);
+  outline: none;
+}
+
+.form button {
+  padding: 15px 40px;
+}
+
+/* *******************
+Footer
+******************* */
+#footer {
+  background: hsl(216, 53%, 9%);
+  padding: 100px 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 120px;
+}
+
+/* *******************
+Footer: 
+Logo and Location
+******************* */
+.footer-logo {
+  width: 150px;
+}
+
+.footer-loc {
+  display: flex;
+  margin-top: 20px;
+}
+
+.footer-loc img {
+  width: 15px;
+  height: 17px;
+  margin-right: 20px;
+  margin-top: 8px;
+}
+
+.footer-loc p {
+  width: 300px;
+  line-height: 25px;
+}
+
+/* *******************
+Footer: 
+Contacts
+******************* */
+.footer-contacts {
+  display: flex;
+  flex-direction: column;
+  margin-top: 80px;
+}
+
+.contact-info {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.contact-info img {
+  margin-right: 20px;
+}
+
+/* *******************
+Footer:
+Links
+******************* */
+.footer-links {
+  width: 300px;
+  display: flex;
+  margin-top: 100px;
+  line-height: 30px;
+  gap: 80px;
+}
+
+.footer-links ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-links ul li {
+  cursor: pointer;
+}
+
+.footer-links ul li:hover {
+  font-weight: 800;
+}
+
+/* *******************
+Footer:
+Socials
+******************* */
+.footer-socials {
+  display: flex;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.footer-socials i {
+  cursor: pointer;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  padding: 10px 10px;
+}
+
+.footer-socials .fb {
+  padding: 10px 13px;
+}
+
+.footer-socials i:hover {
+  border-color:hsl(176, 68%, 64%);
+  color:hsl(176, 68%, 64%);
+}
+
+@media (max-width: 1439px) {
+  .container {
+    width: 100%;
+  }
+
+  #header {
+    width: 700px;
+  }
+
+  .nav-link:hover {
+    text-decoration: underline;
+  }
+  
+  .upper-banner img {
+    width: 500px;
+  }
+
+  .cards {
+    width: 700px;
+  }
+
+  .lower-banner {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .lower-banner-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .lower-banner h1 {
+    width: 500px;
+  }
+
+  .lower-banner-text p {
+    font-size: 1.2em;
+    margin: 10px 0;
+  }
+  
+  .lower-banner a {
+    margin-top: 20px;
+  }
+
+  .testi {
+    display: flex;
+    flex-direction: column;
+    width: 700px; 
+    align-items: center;
+    background-position: left 160px top -5px;
+  }
+
+  .testi-card {
+    margin: 30px auto;
+  }
+
+  .form {
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 150px 100px 50px 100px;
+  }
+
+  .footer-header {
+    width: 500px;
+  }
+
+  .footer-loc p {
+    width: 400px;;
+  }
+
+  .footer-contacts,
+  .footer-links {
+    margin-top: 30px;
+  }
+
+  .footer-links ul li:hover {
+    font-weight: 800;
+  }
+
+}
+
+
+/* *******************
+Media Query:
+Mobile 
+******************* */
+@media (max-width: 767px) {
+  .container {
+    width: 360px;
+  }
+
+  /* *******************
+  Header: 
+  Navigation
+  ******************* */
+  #header {
+    width: 300px;
+  }
+
+  .nav-link:hover {
+    text-decoration: underline;
+  }
+
+  .logo {
+    width: 70px;
+  }
+
+  .navbar {
+    font-size: 0.8em;
+  }
+
+  ul li a {
+    padding: 0 8px;
+  }
+
+  /* *******************
+  Main: 
+  Upper Banner
+  ******************* */
+  .upper-banner {
+    margin: 100px auto;
+  }
+
+  .upper-banner img {
+    width: 300px;
+  }
+
+  .upper-banner-text h1 {
+    font-size: 1.5em;
+    width: 300px;
+  }
+
+  .upper-banner-text p {
+    width: 287px;
+  }
+
+  /* *******************
+  Main:
+  Cards after banner
+  ******************* */
+  .cards {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+  }
+
+  /* *******************
+  Main:
+  Lower Banner
+  ******************* */
+  .lower-banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    text-align: left;
+    margin: 100px auto;
+  }
+
+  .lower-banner-text {
+    width: 300px;
+  }
+  
+  .lower-banner h1 {
+    font-size: 1.3em;
+    line-height: 40px;
+    width: 300px;
+  }
+  
+  .lower-banner p {
+    margin: 20px 0;
+  }
+
+  .lower-banner-img {
+    width: 300px;
+  }
+
+  .lower-banner a:hover {
+    border-bottom: 1px solid #fff;
+    padding-bottom: 5px;
+    color:hsl(176, 68%, 64%);
+  }
+
+  /* *******************
+  Main:
+  Testimonials
+  ******************* */
+  .testi {
+    display: flex;  
+    flex-direction: column;
+    background: url(images/bg-quotes.png);
+    background-size: 40px;
+    background-repeat: no-repeat;
+    background-position: left 10px top -5px;
+    width: 300px;
+    margin: 200px auto;
+  }
+
+  .testi-card {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 20px auto;
+    padding: 40px 30px 30px 30px;
+  }
+
+  .testi-card h5 {
+    width: 250px;
+  }
+
+  /* *******************
+  Form Before Footer
+  ******************* */
+  .form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px 50px;
+    border: none;
+    border-radius: 8px;
+    text-align: center;
+    width: 300px;
+    margin-bottom: -80px;
+  }
+
+  input[type=email] {
+    margin: 0 auto;
+    padding: 10px 40px;
+    width: 220px;
+  }
+
+  .form button {
+    width: 220px;
+    padding: 10px 20px;
+  }
+  
+  .form h1 {
+    width: 220px;
+    font-size: 1.2em;
+  }
+
+  .form p {
+    width: 244px;
+    font-size: 0.9em;
+  }
+
+
+  /* *******************
+  Footer
+  ******************* */
+  #footer {
+    background: hsl(216, 53%, 9%);
+    padding: 150px 50px 20px 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footer-logo {
+    width: 130px;
+  }
+
+  .footer-loc {
+    display: flex;
+  }
+
+  .footer-contacts {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    width: 300px;
+  }
+
+  .footer-links {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    line-height: 30px;
+    gap: 30px;
+  }
+
+  .footer-header {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .footer-loc p {
+    font-size: 0.9em;
+    width: 200px;
+  }
+
+  .footer-links ul li:hover {
+    font-weight: 800;
+  }
+
+}
